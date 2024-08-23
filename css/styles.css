@@ -1,0 +1,140 @@
+/*Reset estilos*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+    
+
+
+/*Estilos Gerais*/
+body{
+
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #fff;
+    color: #333;
+    padding: 20px;
+
+}
+
+/*Cabeçalho*/
+header{
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1{
+    margin-bottom: 10px;
+}
+
+header nav ul{
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li{
+    display: inline;
+    margin-right: 10px;
+}
+
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/*Seções */
+section{
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+section h2{
+    margin-bottom: 10px;
+}
+
+section p, section ul {
+    margin-bottom: 10px;
+
+}
+
+section ul {
+    list-style-type: disc;
+    margin-left: 20px;
+
+}
+
+/* Rodapé*/
+footer{
+    text-align: center;
+    padding: 10px 0;
+    background: #333;
+    color: #fff
+}
+
+
+a{
+ color: #007bff;
+ text-decoration: none;   
+}
+
+a:hover{
+  color: #0056b3;
+  text-decoration: underline;  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
