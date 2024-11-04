@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Responsivo</title>
+</head>
+<body>
+    <header>
+        <h1>Layout Responsivo</h1>
+        <nav>
+            <ul>
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="conteudo">
+            <h2>Conteúdo Principal</h2>
+            <p>Bem-vindo ao nosso site com layout responsivo!</p>
+        <section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Layout Responsivo. Todos os direitos reservados.</p>
+    </footer>
+
+    <style>
+        /* Reset de Estilos */
+        body{
+            font-family: Arial, sans-serief;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+            padding: 20px;
+        }
+
+        /* Cabeçalho */
+        header {
+            background: #333;
+            color: #fff;
+        }
+
+        header h1 {
+            margin-bottom: 10px;
+        }
+
+        header nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+
+        header nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        /* Conteúdo Principal */
+        main {
+            margin: 20px 0;
+        }
+
+        main h2{
+            margin-bottom: 10px;
+        }
+
+        main p { 
+            margin-bottom: 20px;
+        }
+
+        /* Rodapé */
+        footer{
+            text-align: center;
+            padding: 10px 0;          
+            background: #333;
+            color: #fff;                
+        }
+
+        /* Estilos Responsivos */
+        @media (max-width: 768px){
+            header nav ul li {
+                display: block;
+                margin: 5px 0;
+            }
+
+            .container{
+                flex-direction: column;
+            }
+
+            .item { 
+                flex: 1 1 100%;
+            }
+
+        }
+
+
+
+
+
+
+
+
+    </style>
+</body>
+</html>

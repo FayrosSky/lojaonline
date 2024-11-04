@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+    </div>
+
+    <style>
+        .container {
+            display: flex; /* Define o conteiner como um conteiner flexível*/
+            flex-wrap: wrap; /* Permite que os itens flexíveis sejam quebrados em várias linhas*/
+        }
+        
+        .item{
+            flex: 1 1 200px;/* Define que cada item deve crescer e encolher igualmente com uma largura minima de 200px */
+            margin: 10px;
+            padding: 20px; 
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+        
+
+    </style>
+
+
+</body>
+</html>
