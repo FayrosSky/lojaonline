@@ -22,10 +22,46 @@
             flex: 1 1 200px;/* Define que cada item deve crescer e encolher igualmente com uma largura minima de 200px */
             margin: 10px;
             padding: 20px; 
-            background-color: #f4f4f4;
-            text-align: center;
+            background-color: red;
+            text-align: center; /*Alinha os itens ao longo do eixo transversal (flex-start, flex-end, center, strech, baseline)*/
         }
         
+        /* Exemplo de Flexbox: */
+        .container{
+            display: flex;
+            justify-content: space-between; /* Espaça os itens igualmente ao longo do eixo principal */
+            align-items: center; /* Alinha os itens ao centro do eixo transversal */
+            /*height: 1000vh;  Altura da tela inteira */
+        }
+
+        .item{
+            flex: 1;
+            padding: 20px;
+            background-color: red;
+            margin: 10px;
+            text-align: center;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     </style>
 

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="image-carousel-container">
+        <div class="image-carousel">
+            <img src="../full_stack/imagens recortadas/cameras/camera.png" alt="Imagem 1">
+            <img src="../full_stack/imagens recortadas/cabos/Captura de tela de 2024-04-30 16-08-25.png" alt="Imagem 2">
+            <img src="../full_stack/imagens recortadas/cameras/camera.png" alt="Imagem 3">
+            <!-- Adicione mais imagens aqui -->
+        </div>
+        <div class="carousel-nav">
+            <div class="arrow left"></div>
+            <div class="arrow right"></div>
+        </div>
+    </div>
+
+    <style>
+        .image-carousel-container {
+  position: relative;
+}
+
+.image-carousel {
+  display: flex;
+  overflow-x: auto; /* Permite a rolagem horizontal */
+  gap: 10px; /* Espaçamento entre as imagens */
+}
+
+.carousel-nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.image-carousel-container:hover.carousel-nav {
+  opacity: 1;
+}
+
+.arrow {
+  width: 30px;
+  height: 30px;
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  cursor: pointer;
+}
+
+.left {
+  transform: rotate(135deg);
+}
+
+.right {
+  transform: rotate(-45deg);
+}
+    </style>
+</body>
+</html>

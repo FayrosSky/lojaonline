@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca Online</title>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+    <sript src="./script.js"></script>
+    
+    <header>
+        <h1>DL EletroCompCell</h1>
+        <nav>
+            <ul>
+                <li><a href="#livros">Livros</a></li>
+                <li><a href="#adicionar-livro">Adicionar Livro</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <!-- 
+        main: elemento principal que contém as seções de conteúdo
+    
+        section: define as diferentes seções da página
+
+        h2: cabeçalhos das seções
+
+        ul: lista não ordenada para os livros
+        
+        form: formulário para adicionar novos livros
+
+        label: rótulos para os campos do formulário
+
+        input: campos de entrada para o título, autor e ano do livro.
+
+        button: Botão para enviar o formulário
+
+    -->
+    <main>
+        <section id="livros">
+            <h2>Lista de Livros</h2>
+            <ul id="lista-livros">
+                <li>Livro 1</li>
+                <li>Livro 2</li>
+                <li>Livro 3</li>
+                <li>Livro 4</li>
+                <li>Livro 5</li>
+            </ul>
+        </section>
+
+        <section id="adicionar-livro">
+            <h2>Adicionar Novo Livro</h2>
+            <form id="form-livro">
+                <label for="título">Título:</label>
+                <input type="text" id="título" name="título" required>
+
+                <label for="autor">Autor:</label>
+                <input type="text" id="autor" name="autor" required>
+
+                <label for="ano">Ano:</label>
+                <input type="number" id="ano" name="ano" required>
+
+                <button type="submit">Adicionar Livro</button>
+
+                <!-- 
+                    <form id-"form-livro">: formulário para adicionar novos livros
+                    <label>: rótulos para os campos do formulário
+                    <input>: campos de entrada para título, autor e ano do livro
+                    <button>: Botão para enviar o formulário
+                 -->
+
+            </form>
+        </section>
+    </main>
+<footer>
+    <p>&copy; 2024 Biblioteca Online. Todos os direitos reservados</p>
+</footer>
+
+    <style>
+        /* Resetando margens e paddings */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body */
+        body {
+            background-image: url(./imagens/dleletrocomp.png);
+            font-family: Arial, sans-serif;
+            background-color: red;
+            margin: 0;
+            padding: 0px 80px;
+        }
+
+        /* Cabeçalho */
+        /* Define cor de fundo, cor do texto, padding e alinhamento do texto para cabeçalho*/
+        header{
+            background: purple;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;            
+        }
+
+        /*Define a margem inferior do título do cabeçalho*/
+        header h1{
+            margin-bottom: 10px;
+        }
+
+        /* Remove os estilos de lista padrão*/    
+        header nav ul {
+            list-style: disc;
+            padding: 0;
+        }
+
+        /* Exibe os itens da lista em linha e adiciona margem à direita*/
+        header nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+
+        /* Define a cor do texto e remove o sublinhado dos links*/
+        header nav ul li a {
+            color: green;
+            text-decoration: none;
+        }
+
+        /* Seções */
+        /* Define o espaçamento entre as seções*/
+        section{
+            margin-bottom: 20px;
+        }
+
+        /* Define a margem inferior dos cabeçalhos das seções e a cor do texto*/
+        section h2 {
+            margin-bottom: 10px;
+            color: green;
+        }
+
+        /* Remove os estilos de lista padrão e padding*/
+        section ul {
+            list-style-type: none;
+            padding: 0;            
+        }
+        
+        /* Define a cor de fundo, borda, margem inferior, padding e borda arredondada para os itens da lista*/
+        section ul li {
+            background-color: #fff;
+            border: 1px solid blue;
+            margin-bottom: 10px;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        /* Fórmulário */
+        /* Define a exibição em flex e a direção das colunas para o formulário */
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        label {
+            margin-bottom: 5px; /*Margem inferior*/
+            font-weight: bold; /* Tipo de fonte */
+            color: yellow   /* cor do rótulo */
+        }
+
+        /* Define a margem inferior, padding, borda arredondada para os campos do formulário */
+        input, button {
+            margin: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;            
+        }
+
+        /* Define cor de fundo, cor do texto, borda e cursor para o botão */
+        button{
+            background-color: #5cb85c;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        /* Define a cor de fundo ao passar o mouse sobre o botão */
+        button:hover {
+            background-color: blue;
+
+        }
+
+        footer{
+            color: yellow;
+            text-align: center;
+            padding: 10px 0;
+            background: blue;
+            color: #fff;
+        }
+
+
+    </style>
+</body>
+</html>
